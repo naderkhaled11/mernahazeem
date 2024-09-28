@@ -22,18 +22,19 @@
             top: 0;
             width: 100%;
             background: rgba(255, 255, 255, 0.8);
-            padding: 15px 30px;
+            padding: 10px 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             display: flex;
             justify-content: space-between;
             align-items: center;
             z-index: 1000;
+            flex-wrap: wrap;
         }
 
         .navbar a {
             text-decoration: none;
             color: #333;
-            margin: 0 15px;
+            margin: 0 10px;
             font-size: 1.2em;
             font-weight: 700;
         }
@@ -50,17 +51,18 @@
             text-align: center;
             flex-direction: column;
             position: relative;
+            padding: 20px;
         }
 
         .hero h1 {
-            font-size: 5em;
+            font-size: 8vw; /* الحجم يتناسب تلقائيًا مع عرض الشاشة */
             margin: 0;
             color: #ff69b4;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
         .hero h2 {
-            font-size: 2.5em;
+            font-size: 4vw; /* الحجم يتناسب تلقائيًا مع عرض الشاشة */
             font-style: italic;
             margin-top: 10px;
             color: #fff;
@@ -69,12 +71,15 @@
 
         .social-icons {
             margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         .social-icons a {
             color: #333;
-            margin: 0 15px;
-            font-size: 2.5em;
+            margin: 10px;
+            font-size: 6vw; /* الحجم يتناسب تلقائيًا مع عرض الشاشة */
             transition: color 0.3s;
         }
 
@@ -84,23 +89,33 @@
 
         /* الأقسام */
         .section {
-            padding: 100px 50px;
+            padding: 50px 20px;
             text-align: center;
             background: #fff;
-            margin-top: 50px; /* إضافة مسافة بين الأقسام */
+            margin-top: 50px;
         }
 
-        #about {
-            background: #fff;
-        }
-
-        #services {
+        #about, #services, #contact {
             background: #f0e9e4;
         }
 
-        #contact {
-            background: #f0e9e4;
-            padding: 50px;
+        /* وسائل الاستعلام (Media Queries) لضبط العرض على الشاشات الصغيرة */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .hero h1 {
+                font-size: 10vw; /* حجم أكبر على الشاشات الصغيرة */
+            }
+
+            .hero h2 {
+                font-size: 5vw; /* حجم أكبر على الشاشات الصغيرة */
+            }
+
+            .social-icons a {
+                font-size: 8vw; /* حجم أكبر على الشاشات الصغيرة */
+            }
         }
 
         /* تذييل الصفحة */
@@ -129,7 +144,7 @@
     <div class="hero" id="hero">
         <h1>M E R N A H A Z E M</h1>
         <h2>The Bridal Guru</h2>
-
+        
         <!-- أيقونات التواصل الاجتماعي -->
         <div class="social-icons">
             <a href="https://www.tiktok.com/@mernahazeem" target="_blank"><i class="fab fa-tiktok"></i></a>
