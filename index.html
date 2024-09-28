@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merna Hazem - The Bridal Guru</title>
+    <!-- إضافة الخطوط -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Cairo', sans-serif;
+            background-color: #f8f3f0;
+            scroll-behavior: smooth;
+        }
+
+        /* شريط التنقل */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-size: 1.2em;
+            font-weight: 700;
+        }
+
+        .hero {
+            height: 100vh;
+            background-image: url('your-background-image.jpg'); /* تغيير رابط الصورة الخلفية حسب الحاجة */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 5em;
+            margin: 0;
+            color: #ff69b4;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            font-style: italic;
+            margin-top: 10px;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #333;
+            margin: 0 15px;
+            font-size: 2.5em;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #ff4081;
+        }
+
+        /* الأقسام */
+        .section {
+            padding: 100px 50px;
+            text-align: center;
+            background: #fff;
+            margin-top: 50px; /* إضافة مسافة بين الأقسام */
+        }
+
+        #about {
+            background: #fff;
+        }
+
+        #services {
+            background: #f0e9e4;
+        }
+
+        #contact {
+            background: #f0e9e4;
+            padding: 50px;
+        }
+
+        /* تذييل الصفحة */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <div class="navbar">
+        <div class="logo">Merna Hazem</div>
+        <div class="menu">
+            <a href="#hero">الرئيسية</a>
+            <a href="#about">من نحن</a>
+            <a href="#services">خدماتنا</a>
+            <a href="#contact">تواصل معنا</a>
+        </div>
+    </div>
+
+    <!-- قسم العنوان الرئيسي -->
+    <div class="hero" id="hero">
+        <h1>M E R N A H A Z E M</h1>
+        <h2>The Bridal Guru</h2>
+
+        <!-- أيقونات التواصل الاجتماعي -->
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/@mernahazeem" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/merna.hazim" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!-- قسم من نحن -->
+    <div class="section" id="about">
+        <h2>من نحن</h2>
+        <p>نحن نهتم بتحقيق أحلامك وجعل يومك الخاص أكثر تألقًا وفخامة من خلال تنظيم أفراح وحفلات بأعلى مستوى من الجودة والإبداع.</p>
+    </div>
+
+    <!-- قسم الخدمات -->
+    <div class="section" id="services">
+        <h2>خدماتنا</h2>
+        <p>نقدم مجموعة متنوعة من خدمات تنظيم الحفلات، من تصميم الديكور إلى تنسيق الزهور، لضمان تجربة فريدة من نوعها.</p>
+    </div>
+
+    <!-- قسم تواصل معنا -->
+    <div class="section" id="contact">
+        <h2>تواصل معنا</h2>
+        <p>للحجز والاستفسار، تواصل معنا عبر الهاتف: 01114508296 أو عبر البريد الإلكتروني: mernahazem97@icloud.com</p>
+    </div>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <p>جميع الحقوق محفوظة © Merna Hazem - The Bridal Guru 2024</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // تفعيل مكتبة AOS
+        AOS.init();
+    </script>
+</body>
+</html>
